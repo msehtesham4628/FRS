@@ -27,3 +27,4 @@ add_column('question_responses', 'face_detected', 'BOOLEAN DEFAULT 1')
 conn.commit()
 conn.close()
 print("Migration completed successfully!")
+

@@ -112,3 +112,4 @@ docker-compose up --build
 - **Environment Parity**: The `start_dev.sh` script automates local Windows/Linux setup by handling port cleanup (fixing `EADDRINUSE`) and ensuring `migrate_db.py` runs before the API starts.
 - **Containers**: Dockerizes the environment using multi-stage builds (`python:3.12-slim` and `node:22-alpine`) to ensure the reviewer sees the exact same behavior as the developer.
 
+

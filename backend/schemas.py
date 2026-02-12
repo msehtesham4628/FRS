@@ -67,3 +67,4 @@ class Survey(SurveyBase):
     questions: List[SurveyQuestion]
     submissions: List[SurveySubmission] = []
     model_config = ConfigDict(from_attributes=True)
+
