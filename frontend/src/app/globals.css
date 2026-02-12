@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --primary: #3b82f6;
+  --primary-glow: #3b82f644;
+  --secondary: #1e1e1e;
+  --accent: #f472b6;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border-radius: 1rem;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #f472b6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-blue-600 hover:bg-blue-700 transition-all rounded-lg font-semibold flex items-center justify-center gap-2;
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.btn-secondary {
+  @apply px-6 py-3 bg-zinc-800 hover:bg-zinc-700 transition-all rounded-lg font-semibold flex items-center justify-center gap-2;
+}
